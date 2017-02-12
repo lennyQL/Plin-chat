@@ -1,2 +1,2 @@
 # Plin-chat
-Chat bot create by Python.
+Chat bot created by Python.
