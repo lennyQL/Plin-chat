@@ -42,6 +42,24 @@ def run():
         value = 1                #actionの値を1にする
     )
 
+# キャンバス
+    canvas = tk.Canvas(
+                root,            #親要素をメインウインドウに設定
+                width = 500,     #幅
+                height = 300,    #高さ
+                relief=tk.RIDGE, #枠線の表示
+                bd=2             #枠線の幅
+            )
+    canvas.place(x=370, y=0)
+
+    img = tk.PhotoImage(file = "plin1.gif") #表示するイメージ
+    canvas.create_image(
+        0,
+        0,
+        image = img,
+        anchor = tk.NW           #配置の起点となる位置(NorthWest)
+    )
+
 
 # main loop
     root.mainloop()
